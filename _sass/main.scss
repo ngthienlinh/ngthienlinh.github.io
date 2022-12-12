@@ -1,2 +1,33 @@
 @import "vars.scss";
 @import "bootstrap/scss/bootstrap.scss";
+
+.mt-2-rem {
+    margin-top: 2rem;
+}
+
+.text-highlight {
+    color: whitesmoke;
+}
+
+.text-main-color,
+.text-main-color a {
+    color: #9484B8;
+}
+
+.text-main-color a:hover {
+    color: #A2A0E3;
+}
+
+a.nav-selected,
+a.nav-selected:hover {
+    color: whitesmoke;
+    border-bottom: 4px solid white;
+}
+.navbar .container-fluid {
+    padding-right: 0px;
+}
+
+.navbar a {
+    margin-right: 0px;
+    margin-left: var(--bs-navbar-brand-margin-end);
+}

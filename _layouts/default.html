@@ -1,15 +1,38 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}">
+<html lang="{{ site.lang | default: " en-US" }}" class="h-100">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Vinyl">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 </head>
 
-<body>
-    {{ content }}
+<body class="py-5 h-100 text-main-color container" style="background-image: linear-gradient(#393062, #0F0C11);">
+    <div class="d-flex justify-content-between">
+        <div>
+            <h1 style="font-family: 'Rubik Vinyl';" class="fw-bold text-highlight">An Linh</h1>
+            <em>Full Stack Web/Mobile Developer portfolio</em>
+        </div>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand pb-0 {% if page.url == "/" %}nav-selected{% endif %}" href="/">
+                    My Work
+                </a>
+                <a class="navbar-brand pb-0 {% if page.url == "/about.html" %}nav-selected{% endif %}" href="/about.html">
+                    About Me
+                </a>
+                <a class="navbar-brand pb-0 {% if page.url == "/contact.html" %}nav-selected{% endif %}" href="/contact.html" >
+                    Contact
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="mt-5">
+        {{ content }}
+    </div>
 </body>
 
 </html>
