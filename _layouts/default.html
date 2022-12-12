@@ -18,13 +18,13 @@
         </div>
         <nav class="navbar">
             <div class="container-fluid">
-                <a class="navbar-brand pb-0 {% if page.url == "/" %}nav-selected{% endif %}" href="/">
+                <a class="navbar-brand {% if page.url == "/" %}nav-selected{% endif %}" href="/">
                     My Work
                 </a>
-                <a class="navbar-brand pb-0 {% if page.url == "/about.html" %}nav-selected{% endif %}" href="/about.html">
+                <a class="navbar-brand {% if page.url == "/about.html" %}nav-selected{% endif %}" href="/about.html">
                     About Me
                 </a>
-                <a class="navbar-brand pb-0 {% if page.url == "/contact.html" %}nav-selected{% endif %}" href="/contact.html" >
+                <a class="navbar-brand {% if page.url == "/contact.html" %}nav-selected{% endif %}" href="/contact.html" >
                     Contact
                 </a>
             </div>
