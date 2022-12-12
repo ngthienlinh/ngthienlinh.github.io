@@ -10,35 +10,41 @@
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 </head>
 
-<body class="py-5 h-100 text-main-color container" style="background-image: linear-gradient(#393062, #0F0C11);">
-    <div class="d-flex justify-content-between">
-        <div class="d-flex align-items-center">
-            <div style="width: 5rem; height: 5rem; border-radius: 50%; border: 1px solid white; overflow: hidden; background-color: white; margin-right: 1.5rem;">
-                <img src="/assets/images/Ava.png" style="width: 100%; height: 100%;object-fit: cover;">
-            </div> 
-            <div>
-                <h1 style="font-family: 'Rubik Vinyl';" class="fw-bold text-header">An Linh</h1>
-               
-                <em style="font-size: 1.25rem;">Full Stack Web/Mobile Developer portfolio</em>
+<body class="h-100 " style="background-image: linear-gradient(#393062, #0F0C11);">
+
+    <!-- <canvas id="Matrix"></canvas> -->
+    <div class="py-5 text-main-color container">
+        <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+                <div style="width: 5rem; height: 5rem; border-radius: 50%; border: 1px solid white; overflow: hidden; background-color: white; margin-right: 1.5rem;">
+                    <img src="/assets/images/Ava.png" style="width: 100%; height: 100%;object-fit: cover;">
+                </div> 
+                <div>
+                    <h1 style="font-family: 'Rubik Vinyl';" class="fw-bold text-header">An Linh</h1>
+                   
+                    <em style="font-size: 1.25rem;">Full Stack Web/Mobile Developer portfolio</em>
+                </div>
             </div>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand {% if page.url == "/" %}nav-selected{% endif %}" href="/">
+                        My Work
+                    </a>
+                    <a class="navbar-brand {% if page.url == "/about" %}nav-selected{% endif %}" href="/about">
+                        About Me
+                    </a>
+                    <a class="navbar-brand {% if page.url == "/contact" %}nav-selected{% endif %}" href="/contact" >
+                        Contact
+                    </a>
+                </div>
+            </nav>
         </div>
-        <nav class="navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand {% if page.url == "/" %}nav-selected{% endif %}" href="/">
-                    My Work
-                </a>
-                <a class="navbar-brand {% if page.url == "/about.html" %}nav-selected{% endif %}" href="/about.html">
-                    About Me
-                </a>
-                <a class="navbar-brand {% if page.url == "/contact.html" %}nav-selected{% endif %}" href="/contact.html" >
-                    Contact
-                </a>
-            </div>
-        </nav>
-    </div>
-    <div class="mt-5">
-        {{ content }}
+        <div class="mt-5">
+            {{ content }}
+        </div>
     </div>
 </body>
-
+<!-- <footer>
+    <script src="/assets/js/matrixRain.js"></script>
+</footer> -->
 </html>
