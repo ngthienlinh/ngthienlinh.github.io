@@ -41,3 +41,36 @@ a.nav-selected:hover {
     margin-right: 0px;
     margin-left: var(--bs-navbar-brand-margin-end);
 }
+
+.card-project {
+    width:100%;
+    height: 330px;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+
+.card-project > div:first-child {
+    height: 66%;
+    background-color: aliceblue;
+}
+
+.card-project > div:first-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-project > div:nth-child(2) {
+    height: 34%;
+    overflow: auto;
+}
+
+.card-project-large {
+    height: 100%; 
+    border-radius: 15px;
+}
+
+.card-project-large > div:first-child img {
+    height: 450px;
+}
